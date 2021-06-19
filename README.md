@@ -37,12 +37,11 @@ Iremos definir as páginas exatas para cada time ainda hoje, assim poderemos foc
 #### Times
 Time | Integrantes | Tema | Página
 -- | -- | -- | --
-TIME X | Alunos | Cegueira e Baixa Visão | Tema
-TIME Y | Alunos | Auditiva | Tema e página Sobre
-TIME Z | Alunos | Cognitiva | Tema e página Contato
-TIME @ | Alunos | Motora | Tema e página Principal
+Alpha | Vanessa, Jonas, José, Judá | Auditiva e Baixa Visão | Tema
+Rocket | Eduardo, Rafael, Mariana, Luiz Alberto | Cognitiva | Tema e página Sobre
+X-Team | Ricardo, Vitor, Felipe, Miran | Motora | Tema e página Contato
 
-##### Crie a branch de seu time, com exceção do time-3
+##### Crie a branch de seu time
 Para criar sua branch digite o comando abaixo tocando o `X` pelo numero do seu time.
 ```shell
 git checkout -b team-nome-incrivel
