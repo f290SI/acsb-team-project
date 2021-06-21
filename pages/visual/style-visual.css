@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +11,7 @@ body{
     transition: background 0.5s;
 }
 body.dark{
-    background-color: #212529;
+    background-color: #020202;
 }
 
 .container{
@@ -22,7 +21,7 @@ body.dark{
     transition: background 0.5s;
 }
 body.dark .container{
-    background-color: #464646;
+    background-color: #1E1E1E;
 }
 
 .intro, .btn{
@@ -57,23 +56,24 @@ article{
 .intro p{
     max-width: 50%;
     padding: 10px 0;
-    line-height: 1.5em;   /*espacamento na vertical*/
+    line-height: 1.5em;   
 }  
-
 p{
     margin-bottom: 10px;
     letter-spacing: 0.065em;
 }
-
-body.dark p, body.dark .criar ul li{
-    color: #fff;
+body.dark p, body.dark .criar ul li, body.dark .visao ul li{
+    color: rgba(255, 255, 255, 0.87);
     transition: 0.5s;
 }
-.intro figure{
-    max-width: 50%;
-    max-height: 380px;
+.intro .exame{
+    position: relative;
+    width: 50%;
+    height: 380px;
 }
-figure img{
+.exame img{
+    position: absolute;
+    right: 0;
     width: 90%;
     height: 100%;
 } 
@@ -84,11 +84,20 @@ figure img{
     padding: 30px 40px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+    transition: background 0.5s;
+}
+body.dark .visao{
+    background-color: #446468;
 }
 .visao h3{
     margin-bottom: 20px;
     color: #284b63;
 }
+body.dark .visao h3{
+    color: #f5f5f5;
+    transition: 0.5s;
+}
+
 
 /* ################## */
 
@@ -104,9 +113,12 @@ figure img{
     overflow: hidden;
     background-color: #a9d6e5;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+    transition: background 0.5s;
+}
+body.dark .leitura figure{
+    background-color: #446468;
 }
 .leitura figure img{
-    background-size: cover; 
     width: 100%;
     height: 80%;
 }
@@ -115,11 +127,13 @@ figure img{
     color: #284b63;
     font-weight: 600;
 }
+body.dark .leitura figure figcaption{
+    color: rgba(255, 255, 255, 0.87);
+}
 .utensilios h3{
     color: #284b63;
-    margin-bottom: 20px;
+    margin: 30px 0;
 }
-
 
 .web .texto{
     display: flex;
@@ -136,13 +150,15 @@ figure img{
     color: #284b63;
 }
 
-.web aside figure{
+.web .texto aside figure{
     width: 100%;
     height: 235px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-
-
+.web .texto aside figure img{
+    width: 95%;
+    height: 100%;
+}
 .audiodesc{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -177,7 +193,6 @@ body.dark .audiodesc .coluna, body.dark .audiodesc .item{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
     margin-bottom: 10px;
 }
-
 .item figure img{
     width: 100%;
     height: 70%;
@@ -238,7 +253,6 @@ footer p{
     align-items: center;
     cursor: pointer;
 }
-
 body.dark .toggle{
     background: #404852;
 }
@@ -266,9 +280,11 @@ body.dark .toggle{
     p{
         font-size: 0.9em;
     }
-
-    .intro figure{
-        max-width: 100%;
+    .visao h3, .coluna h3, .tem h3{
+        font-size: 1em;
+    }
+    .intro .exame{
+        width: 85%;
         height: 240px;
     }
     .utensilios h3{
@@ -278,7 +294,7 @@ body.dark .toggle{
         display: block;
     }
     .leitura figure{
-        min-width: 80%;
+        min-width: 70%;
         min-height: 280px;
         margin: auto;
         margin-bottom: 30px;
