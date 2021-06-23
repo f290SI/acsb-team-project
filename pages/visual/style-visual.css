@@ -167,6 +167,7 @@ body.dark .leitura figure figcaption{
     background-color: #e9ecef;
     padding: 10px 20px;
     margin-right: 15px;
+    border-radius: 10px;
 }
 .audiodesc h3, .item-texto h4{
     color: #284b63;
@@ -175,6 +176,7 @@ body.dark .leitura figure figcaption{
 .audiodesc .item{
     background-color: #e9ecef;
     padding: 10px 20px;
+    border-radius: 10px;
 }
 
 body.dark .audiodesc .coluna, body.dark .audiodesc .item{
@@ -200,6 +202,10 @@ body.dark .audiodesc .coluna, body.dark .audiodesc .item{
 .item figcaption{
     padding: 10px 10px;
     color: #fff;
+}
+
+.leitura figcaption{
+    text-align: center;
 }
 
 .criar{
