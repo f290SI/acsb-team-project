@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<title>Acessibilidade - Projeto Final</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+
+<body id="topo">
+
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+        </div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper">
+            </div>
+        </div>
+    </div>
+
+<!-- Menu lateral ao clicar -->
+<!-- Menu lateral ao clicar -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-large menuLateral" id="menuLateral">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright
+  w3-text-indigo">Fechar
+        <i class="fa fa-remove"></i>
+    </a>
+    <a href="#" class="w3-bar-item w3-button">Deficiência Auditiva</a>
+    <a href="#" class="w3-bar-item w3-button">Deficiência Física</a>
+    <a href="#" class="w3-bar-item w3-button">Deficiência Intelectual</a>
+    <a href="#" class="w3-bar-item w3-button">Deficiência Visual</a>
+</nav>
+
+<!-- Menu principal -->
+<nav class="w3-top nav-skip">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+            href="javascript:void(0);" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-indigo rkt-logo-btn"><i class="fa fa-universal-access
+        w3-margin-right"></i>PROJETO: "Blog Acessibilidade"</a>
+        <a href="projeto.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projeto</a>
+        <div class="w3-dropdown-hover w3-hide-small" id="rkt-dropdown">
+            <button class="w3-button" title="equipes que integram o projeto">Equipes
+                <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="equipes.html" class="w3-bar-item w3-button">Rocket</a>
+                <a href="equipes.html" class="w3-bar-item w3-button">Equipe 02</a>
+                <a href="equipes.html" class="w3-bar-item w3-button">Equipe 03</a>
+                <a href="equipes.html" class="w3-bar-item w3-button">Equipe 04</a>
+            </div>
+        </div>
+        <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
+        <a href="contato.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contato</a>
+        <a href="#main" class="skip-link" tabindex="1">Saltar para conteudo</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-indigo" title="Procurar">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
+
+    <!-- Menu em telas menores -->
+    <div id="menuMenor" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+        <a href="projeto.html" class="w3-bar-item w3-button">Projeto</a>
+        <a href="equipes.html" class="w3-bar-item w3-button">Equipes</a>
+        <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+        <a href="contato.html" class="w3-bar-item w3-button">Contato</a>
+        <a href="#" class="w3-bar-item w3-button">Search</a>
+    </div>
+</nav>
+<br>
+<br>
+ 
+    <!-- Cards Equipes -->
+    <div class="w3-row-padding">
+        <div class="w3-center w3-padding-64">
+            <span class="w3-xlarge w3-bottombar w3-border-indigo w3-padding-16">
+            CONHEÇA NOSSAS EQUIPES</span>
+        </div>
+        
+        <div class="w3-quarter w3-margin-bottom w3-padding-16 w3-row-padding w3-center">
+            <div class="w3-card-4">
+                <img src="images/rocket.png" alt="Logo da equipe" class="w3-hover-opacity ajusteEquipe">
+                <div class="w3-container">
+                    <h3>ROCKET</h3>
+                    <p class="w3-opacity">"Deficiência Intelectual"</p>
+                    <br>
+                    <p><b>INTEGRANTES:</b></p>
+                    <P>Eduardo Rocha</P>
+                    <P>Gustavo Luigi Zanibão</P>
+                    <P>Luís Alberto Narcizo Gomes</P>
+                    <P>Luiz Carlos Constantino</P>
+                    <P>Mariana Silva Corrêa Leite</P>
+                    <P>Rafael</P>
+                    <br>
+                    <p><button class="w3-button w3-indigo w3-block w3-hover-black rkt-black-btn">Contato</button></p>
+                </div>
+            </div>
+        </div>
+                                        
+        <div class="w3-quarter w3-margin-bottom w3-padding-16 w3-row-padding w3-center">
+            <div class="w3-card-4">
+                <img src="images/logo.png" alt="Logo da equipe" class="w3-hover-opacity ajusteEquipe">
+                <div class="w3-container">
+                    <h3>EQUIPE 02</h3>
+                    <p class="w3-opacity">"Deficiência Auditiva"</p>
+                    <br>
+                    <p><b>INTEGRANTES:</b></p>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <br>
+                    <p><button class="w3-button w3-indigo w3-block w3-hover-black rkt-black-btn">Contato</button></p>
+                </div>
+            </div>
+        </div>
+                                
+        <div class="w3-quarter w3-margin-bottom w3-padding-16 w3-row-padding w3-center">
+            <div class="w3-card-4">
+                <img src="images/logo.png" alt="Logo da equipe" class="w3-hover-opacity ajusteEquipe">
+                <div class="w3-container">
+                    <h3>EQUIPE 03</h3>
+                    <p class="w3-opacity">"Deficiência Física"</p>
+                    <br>
+                    <p><b>INTEGRANTES:</b></p>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <br>
+                    <p><button class="w3-button w3-indigo w3-block w3-hover-black rkt-black-btn">Contato</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-quarter w3-margin-bottom w3-padding-16 w3-row-padding w3-center">
+            <div class="w3-card-4">
+                <img src="images/logo.png" alt="Logo da equipe" class="w3-hover-opacity ajusteEquipe">
+                <div class="w3-container">
+                    <h3>EQUIPE 04</h3>
+                    <p class="w3-opacity">"Deficiência Visual"</p>
+                    <br>
+                    <p><b>INTEGRANTES:</b></p>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <P>Nome completo do aluno</P>
+                    <br>
+                    <p><button class="w3-button w3-indigo w3-block w3-hover-black rkt-black-btn">Contato</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    
+    <!-- Rodapé -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Siga nosso projeto nas Redes Sociais</h4>
+    <nav>
+        <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Facebook"><i
+                class="fa fa-facebook"></i></a>
+        <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Twitter"><i
+                class="fa fa-twitter"></i></a>
+        <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Instagram"><i
+                class="fa fa-instagram"></i></a>
+        <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Linkedin"><i
+                class="fa fa-linkedin"></i></a>
+    </nav>
+    <p>Desenvolvido por:<a href="equipes.html" target="_blank"> Equipe Rocket</a></p>
+
+    <div class="w3-tooltip w3-right ajusteRodape">
+        <span class="w3-text w3-padding w3-indigo w3-hide-small">Voltar ao topo</span>
+        <a class="w3-button w3-theme" href="#topo"><span class="w3-xlarge">
+                <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+</footer>
+  
+  <script src="script.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  
+  </body>
+  </html>

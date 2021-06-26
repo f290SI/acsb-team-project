@@ -1,32 +1,344 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>Acessibilidade - Projeto Final</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto ACSB</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
 
-<body>
-    <main>
-        <h1>Destaque Primário</h1>
-        <h2>Destaque Secundário</h2>
-        <h3 style="color: #ef9a9a;">Cor Identidade Visual</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod distinctio culpa optio incidunt. Error est, velit nulla facilis repellat maiores ut officia architecto delectus sed. Quidem doloremque voluptatem nesciunt sit.</p>
-        <div style="background-color: #FFFFFF14; padding: 1em; color: #FFFFFF99;">
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus, ad est quidem magni fugiat tempore iure ratione vel unde optio, odio consectetur exercitationem natus amet ullam expedita? Animi, alias!
-            </p>
+<body id="topo">
+
+<!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active">
         </div>
-        <div style="background-color: #ef9a9a14; padding: 1em; color: #FFFFFF99; margin-top: 36px;">
-            <h1 style="color: #ef9a9a;">Titulo ID Visual</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus, ad est quidem magni fugiat tempore iure ratione vel unde optio, odio consectetur exercitationem natus amet ullam expedita? Animi, alias!
-            </p>
-            <button style="border: none; background-color: #ef9a9a; ">CLICK</button>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper">
+            </div>
         </div>
-    </main>
+    </div>
+
+<!-- Menu lateral ao clicar -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-large menuLateral" id="menuLateral">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright
+  w3-text-indigo">Fechar
+  <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Deficiência Auditiva</a>
+  <a href="#" class="w3-bar-item w3-button">Deficiência Física</a>
+  <a href="#" class="w3-bar-item w3-button">Deficiência Intelectual</a>
+  <a href="#" class="w3-bar-item w3-button">Deficiência Visual</a>
+</nav>
+
+<!-- Menu principal -->
+<nav class="w3-top nav-skip">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+        href="javascript:void(0);" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-indigo rkt-logo-btn"><i class="fa fa-universal-access
+        w3-margin-right"></i>PROJETO: "Blog Acessibilidade"</a>
+        <a href="projeto.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projeto</a>
+        <div class="w3-dropdown-hover w3-hide-small" id="rkt-dropdown">
+            <button class="w3-button" title="equipes que integram o projeto">Equipes 
+            <i class="fa fa-caret-down"></i></button>     
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="equipes.html" class="w3-bar-item w3-button">Rocket</a>
+                <a href="equipes.html" class="w3-bar-item w3-button">Equipe 02</a>
+                <a href="equipes.html" class="w3-bar-item w3-button">Equipe 03</a>
+                <a href="equipes.html" class="w3-bar-item w3-button">Equipe 04</a>
+            </div>
+        </div>
+        <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
+        <a href="contato.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contato</a>
+        <a href="#main" class="skip-link" tabindex="1">Saltar para conteudo</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-indigo" title="Procurar">
+        <i class="fa fa-search"></i>
+        </a>
+    </div>
+
+        <!-- Menu em telas menores -->
+    <div id="menuMenor" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+        <a href="projeto.html" class="w3-bar-item w3-button">Projeto</a>
+        <a href="equipes.html" class="w3-bar-item w3-button">Equipes</a>
+        <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+        <a href="contato.html" class="w3-bar-item w3-button">Contato</a>
+        <a href="#" class="w3-bar-item w3-button">Search</a>
+    </div>
+</nav>
+
+        <!-- Carrossel de imagens -->
+    <div class="w3-container ajusteCarrossel">
+        <div class="w3-display-container mySlides">
+            <img src="images/slide1.png" class="imgCarrossel w3-animate-left w3-grayscale" alt="Mão tocando uma tela de computador, vista por de trás da tela.">
+            <div class="w3-display-bottomleft w3-container w3-padding-32">
+                <span class="w3-indigo w3-padding-large w3-animate-top">Título 01</span>
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/slide2.png" class="imgCarrossel w3-animate-left w3-grayscale" alt="Homem tocando uma tela e tendo sua digital exibida.">
+            <div class="w3-display-bottomleft w3-container w3-padding-32">
+                <span class="w3-indigo w3-padding-large w3-animate-top">Título 02</span>
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/slide3.png" class="imgCarrossel w3-animate-left w3-grayscale" alt="Mulher olhando um tablet.">
+            <div class="w3-display-bottomleft w3-container w3-padding-32">
+                <span class="w3-indigo w3-padding-large w3-animate-top">Título 03</span>
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/slide4.png" class="imgCarrossel w3-animate-left w3-grayscale" alt="Homem tocando um dispositivo circula que projeta imagem holográfica.">
+            <div class="w3-display-bottomleft w3-container w3-padding-32">
+                <span class="w3-indigo w3-padding-large w3-animate-top">Título 04</span>
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="images/slide5.png" class="imgCarrossel w3-animate-left w3-grayscale" alt="Mulher utilizando notebook em cadeira de rodas.">
+            <div class="w3-display-bottomleft w3-container w3-padding-32">
+                <span class="w3-indigo w3-padding-large w3-animate-top">Título 05</span>
+            </div>
+        </div>
+
+        <!-- Botões carrossel -->
+        <div class="w3-container w3-indigo w3-padding w3-xlarge">
+            <div class="w3-left" onclick="plusDivs(-1)" onkeypress="plusDivs(-1)" tabindex="0" aria-label="Mover carrossel para a esquerda" class="car-btn">
+                <i class="fa fa-arrow-circle-left w3-hover-text-black"></i>
+            </div>
+            <div class="w3-right" onclick="plusDivs(1)" onkeypress="plusDivs(1)" tabindex="0" aria-label="Mover carrossel para a direita" class="car-btn">
+                <i class="fa fa-arrow-circle-right w3-hover-text-black"></i>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+<main id="main">
+<!-- Ícones Acessibilidade -->
+<section class="w3-container w3-padding-64 w3-center">
+  <h2>NOSSOS SERVIÇOS</h2>
+  <p>Conheça nossas soluções para acessibilidade</p>
+
+  <div class="w3-row"><br>
+
+    <div class="w3-quarter w3-row-padding">
+      <i class="fa fa-assistive-listening-systems w3-jumbo w3-hover-text-indigo" aria-hidden="true"
+        alt="Deficiência Auditiva"></i>
+      <h3>Deficiência Auditiva</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a href="#" target="_blank" class="w3-button w3-indigo w3-padding-large w3-hover-black rkt-black-btn"
+        aria-role="button">
+        Saiba mais
+      </a>
+      <br>
+      <br>
+    </div>
+
+    <div class="w3-quarter w3-row-padding">
+      <i class="fa fa-wheelchair w3-jumbo w3-hover-text-indigo" aria-hidden="true" alt="Deficiência Física"></i>
+      <h3>Deficiência Física</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.</p>
+      <a href="#" target="_blank" class="w3-button w3-indigo w3-padding-large w3-hover-black rkt-black-btn"
+        aria-role="button">
+        Saiba mais
+      </a>
+      <br>
+      <br>
+    </div>
+
+    <div class="w3-quarter w3-row-padding">
+      <i class="fa fa-user-circle-o w3-jumbo w3-hover-text-indigo" aria-hidden="true" alt="Deficiência Intelectual"></i>
+      <h3>Deficiência Intelectual</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.</p>
+      <a href="#" target="_blank" class="w3-button w3-indigo w3-padding-large w3-hover-black rkt-black-btn"
+        aria-role="button">
+        Saiba mais
+      </a>
+      <br>
+      <br>
+    </div>
+
+    <div class="w3-quarter w3-row-padding">
+      <i class="fa fa-low-vision w3-jumbo w3-hover-text-indigo" aria-hidden="true" alt="Deficiência Visual"></i>
+      <h3>Deficiência Visual</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.</p>
+      <a href="#" target="_blank" class="w3-button w3-indigo w3-padding-large w3-hover-black rkt-black-btn"
+        aria-role="button">
+        Saiba mais
+      </a>
+      <br>
+      <br>
+    </div>
+
+  </div>
+</section>
+
+<!-- Soluções -->
+<section class="w3-row-padding w3-padding-64 w3-theme-l1">
+
+  <div class="w3-quarter">
+    <h2>Soluções Inovadoras</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+      eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+      in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card w3-white">
+      <img src="images/inova1.png"
+        alt="Mulheres em um escritório, duas conversando e uma ao fundo, numa cadeira de rodas, escrevendo em quadro."
+        class="ajusteSol">
+      <div class="w3-container">
+        <h3>Solução 1</h3>
+        <h4>Título 1</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card w3-white">
+      <img src="images/inova2.png" alt="Celular em cima de uma mesa, com uma tela de login de aplicativo."
+        class="ajusteSol">
+      <div class="w3-container">
+        <h3>Solução 2</h3>
+        <h4>Título 2</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card w3-white">
+      <img src="images/inova3.png"
+        alt="Mesa de escrtitório que segue ao longo de uma parede, com pessoas trabalhando ao fundo e um notebook em destaque na frente."
+        class="ajusteSol">
+      <div class="w3-container">
+        <h3>Solução 3</h3>
+        <h4>Título 3</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Botão menu lateral -->
+<div class="w3-container btnContainer">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-indigo btnContainerMais">+</a>
+</div>
+
+<!-- Tabela de planos -->
+<div class="w3-row-padding w3-center w3-padding-64">
+  <h2>PLANOS DE ACESSORAMENTO</h2>
+  <p>Acompanhamento na implementação de Projetos em Acessibilidade</p><br>
+  <div class="w3-third w3-margin-bottom">
+    <ul class="w3-ul w3-border w3-hover-shadow">
+      <li class="w3-theme">
+        <p class="w3-xlarge">Básico</p>
+      </li>
+      <li class="w3-padding-16"><b>01</b> Descritivo do item</li>
+      <li class="w3-padding-16"><b>02</b> Descritivo do item</li>
+      <li class="w3-padding-16"><b>03</b> Descritivo do item</li>
+      <li class="w3-padding-16"><b>04</b> Descritivo do item</li>
+      <li class="w3-padding-16">
+        <h2 class="w3-wide"><i class="fa fa-usd"></i> 0000,00</h2>
+        <span class="w3-opacity">por mês</span>
+      </li>
+      <li class="w3-theme-l5 w3-padding-24">
+        <button class="w3-button w3-indigo w3-padding-large w3-hover-black rkt-black-btn"><i class="fa fa-check"></i>
+          Contrate</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="w3-third w3-margin-bottom">
+    <ul class="w3-ul w3-border w3-hover-shadow">
+      <li class="w3-theme-l2">
+        <p class="w3-xlarge">Intermediário</p>
+      </li>
+      <li class="w3-padding-16"><b>01</b> Descritivo do item</li>
+      <li class="w3-padding-16"><b>02</b> Descritivo do item</li>
+      <li class="w3-padding-16"><b>03</b> Descritivo do item</li>
+      <li class="w3-padding-16"><b>04</b> Descritivo do item</li>
+      <li class="w3-padding-16">
+        <h2 class="w3-wide"><i class="fa fa-usd"></i> 0000,00</h2>
+        <span class="w3-opacity">por mês</span>
+      </li>
+      <li class="w3-theme-l5 w3-padding-24">
+        <button class="w3-button w3-indigo w3-padding-large w3-hover-black rkt-black-btn"><i class="fa fa-check"></i>
+          Contrate</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="w3-third w3-margin-bottom">
+    <ul class="w3-ul w3-border w3-hover-shadow">
+      <li class="w3-theme">
+        <p class="w3-xlarge">Completo</p>
+      </li>
+      <li class="w3-padding-16"><b>01</b> Descritivo do item</li>
+      <li class="w3-padding-16"><b>02</b> Descritivo do item</li>
+      <li class="w3-padding-16"><b>03</b> Descritivo do item</li>
+      <li class="w3-padding-16"><b>04</b> Descritivo do item</li>
+      <li class="w3-padding-16">
+        <h2 class="w3-wide"><i class="fa fa-usd"></i> 0000,00</h2>
+        <span class="w3-opacity">por mês</span>
+      </li>
+      <li class="w3-theme-l5 w3-padding-24">
+        <button class="w3-button w3-indigo w3-padding-large w3-hover-black rkt-black-btn"><i class="fa fa-check"></i>
+          Contrate</button>
+      </li>
+    </ul>
+  </div>
+</div>
+</main>
+
+
+<!-- Rodapé -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Siga nosso projeto nas Redes Sociais</h4>
+  <nav>
+    <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Facebook"><i
+        class="fa fa-facebook"></i></a>
+    <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Instagram"><i
+        class="fa fa-instagram"></i></a>
+    <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Linkedin"><i
+        class="fa fa-linkedin"></i></a>
+  </nav>
+  <p>Desenvolvido por:<a href="equipes.html" target="_blank"> Equipe Rocket</a></p>
+
+  <div class="w3-tooltip w3-right ajusteRodape">
+    <span class="w3-text w3-padding w3-indigo w3-hide-small">Voltar ao topo</span>
+    <a class="w3-button w3-theme" href="#topo"><span class="w3-xlarge">
+        <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
 </body>
-
 </html>
