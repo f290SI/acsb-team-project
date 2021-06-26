@@ -1,32 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto ACSB</title>
-    <link rel="stylesheet" href="css/style.css">
+  <title>Blog FATEC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" media="screen and (max-width: 768px)" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <main>
-        <h1>Destaque Primário</h1>
-        <h2>Destaque Secundário</h2>
-        <h3 style="color: #ef9a9a;">Cor Identidade Visual</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod distinctio culpa optio incidunt. Error est, velit nulla facilis repellat maiores ut officia architecto delectus sed. Quidem doloremque voluptatem nesciunt sit.</p>
-        <div style="background-color: #FFFFFF14; padding: 1em; color: #FFFFFF99;">
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus, ad est quidem magni fugiat tempore iure ratione vel unde optio, odio consectetur exercitationem natus amet ullam expedita? Animi, alias!
-            </p>
+  
+  <header>
+    <div class="container">
+      <img src="./images/logo.png" alt="Blog FATEC" />
+      <div class="menu-section">
+        <div class="menu-toggle">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
         </div>
-        <div style="background-color: #ef9a9a14; padding: 1em; color: #FFFFFF99; margin-top: 36px;">
-            <h1 style="color: #ef9a9a;">Titulo ID Visual</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus, ad est quidem magni fugiat tempore iure ratione vel unde optio, odio consectetur exercitationem natus amet ullam expedita? Animi, alias!
-            </p>
-            <button style="border: none; background-color: #ef9a9a; ">CLICK</button>
-        </div>
-    </main>
-</body>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+              <a href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
+  <section class="hero">
+    <div class="container">
+      <div>
+        <h2>
+          Bem vindo a pagina da deficiencia motoro, aqui falaremos mais sobre ela, caso precise mais informações entre em contato.
+        </h2>
+      </div>
+      <img src="./images/hero.png" alt="" />
+    </div>
+  </section>
+
+  <section class="hero" id="sobre">
+    <div class="container">
+      <div>
+        <h2>
+          Deficiência motora
+        </h2>
+        <p>
+          Deficiência motora é uma limitação do funcionamento físico-motor de um ser humano ou animal. Normalmente, os problemas ocorrem no cérebro ou sistema locomotor, levando a um mau funcionamento ou paralisia dos membros inferiores e/ou superiores.
+
+          A deficiência física pode ter várias etiologias, entre as principais estão os: fatores genéticos, fatores virais ou bacteriano, fatores neonatal, fatores traumáticos (especialmente os medulares).
+          
+          As pessoas com deficiência de ordem física ou motora necessitam de atendimento fisioterápico, psicológico a fim de lidar com os limites e dificuldades decorrentes da deficiência e simultaneamente desenvolver todas as possibilidades e potencialidades. A deficiência física refere-se ao comprometimento do aparelho locomotor que compreende o sistema ósteo-articular, o sistema muscular e o sistema nervoso. As doenças ou lesões que afetam quaisquer desses sistemas, isoladamente ou em conjunto, podem produzir quadros de limitações físicas de grau e gravidade variáveis, segundo o(s) segmento(s) corporais afetados e o tipo de lesão ocorrida.
+        </p>
+        <a href="contato.html" class="button">Entre em contato para saber mais</a>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="back-to-top" onclick="backToTop()"></div>
+
+  <footer class="copyright">
+    <p>FATEC - 2021 &copy;</p>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+</body>
 </html>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<script src="main.js"></script>
