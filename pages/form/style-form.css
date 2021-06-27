@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: 'LexieReadable';
+    src: url("font/LexieReadable-Regular.ttf");
+}
 
 
 *{
@@ -8,7 +11,9 @@
 }
 
 body,  input, textarea{
-    font-family: "Poppins", sans-serif;
+    font-family: 'LexieReadable';
+    letter-spacing: 0.065em;
+    font-size: 1.1em;
 }
 
 .container{
