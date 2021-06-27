@@ -281,15 +281,17 @@ textarea.input{
     top: 20px;
     right: 15%;
     background: #e9f5ff;
-    width: 30px;
+    width: 75px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-
+.toggle:hover{
+    box-shadow: 1px 2px 2px 0px rgba(121, 121, 120, 0.3);
+}
 .container.dark .toggle{
     background: #404852;
 }
@@ -302,7 +304,13 @@ textarea.input{
     content: '\f185';
     color: white;
 }
-
+.toggle #claroEscuro{
+    margin-left: 5px;
+    font-size: 12px;
+}
+#claroEscuro:hover{
+    color: #2fa1ff;
+}
 
 
 @media (max-width: 850px){
