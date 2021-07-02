@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<title>Acessibilidade - Projeto Final</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+
+<body id="topo">
+
+<!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+        </div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper">
+            </div>
+        </div>
+    </div>
+
+<!-- Menu principal -->
+<nav class="w3-top nav-skip">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+        href="javascript:void(0);" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-indigo rkt-logo-btn"><i class="fa fa-universal-access
+        w3-margin-right"></i>PROJETO: "Blog Acessibilidade"</a>
+        <a href="projeto.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projeto</a>
+        <div class="w3-dropdown-hover w3-hide-small" id="rkt-dropdown">
+            <button class="w3-button" title="equipes que integram o projeto">Equipes 
+            <i class="fa fa-caret-down"></i></button>     
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="equipes.html" class="w3-bar-item w3-button">Rocket</a>
+                <a href="equipes.html" class="w3-bar-item w3-button">Equipe 02</a>
+                <a href="equipes.html" class="w3-bar-item w3-button">Equipe 03</a>
+                <a href="equipes.html" class="w3-bar-item w3-button">Equipe 04</a>
+            </div>
+        </div>
+        <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
+        <a href="contato.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contato</a>
+        <a href="#main" class="skip-link" tabindex="1">Saltar para conteudo</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-indigo" title="Procurar">
+        <i class="fa fa-search"></i>
+        </a>
+    </div>
+
+        <!-- Menu em telas menores -->
+    <div id="menuMenor" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+        <a href="projeto.html" class="w3-bar-item w3-button">Projeto</a>
+        <a href="equipes.html" class="w3-bar-item w3-button">Equipes</a>
+        <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+        <a href="contato.html" class="w3-bar-item w3-button">Contato</a>
+        <a href="#" class="w3-bar-item w3-button">Procurar</a>
+    </div>
+</nav>
+
+<br>
+<br>
+
+<!-- Conteúdo Deficiência Cognitiva -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h1>"Deficiência Intelectual ou Cognitiva"</h1>
+            <hr>
+            <ul class="w3-ul">
+                <li>O conceito de deficiência cognitiva é extremamente amplo, e nem sempre bem definido.</li>
+                <li>Em termos gerais poderíamos dizer que uma pessoa com deficiência cognitiva está sujeita
+                    a ter maior dificuldade ao executar um ou mais tipos de tarefas mentais do que a pessoa com
+                    capacidade mediana.</li>
+            </ul>
+            <br>
+            <!-- Conteúdo Dislexia -->
+            <button onclick="acordeom('btnAcordeom01')" class="w3-button w3-indigo w3-hover-black
+            w3-block w3-left-align">Dislexia</button>
+            <br>
+            <br>
+            <div id="btnAcordeom01" class="w3-hide w3-container w3-light-grey">
+                <h2>Dislexia</h2>
+                <br>
+                <h2>O que é?</h2>
+                <ul class="w3-ul">
+                    <li>Distúrbio de aprendizagem caracterizado pela dificuldade de leitura.</li>
+                    <li>A pessoa tem dificuldade para encadear as letras e formar as palavras,
+                        e não relaciona direito os sons às sílabas formadas. Como sintoma, a pessoa
+                        começa a trocar a ordem de certas letras ao ler e escrever.</li>
+                </ul>
+                <h3>Sintomas:</h3>
+                <ul class="w3-ul">
+                    <li>Trocar letras, principalmente quando elas possuem sons parecidos,
+                        como “f” e “v”, “b” e “p”, “d” e “t”.</li>
+                    <li>Pular ou inverter sílabas na hora de ler ou escrever.</li>
+                    <li>Fala prejudicada.</li>
+                    <li>Não conseguir associar letras e sons.</li>
+                    <li>Confundir palavras que soam parecido, como macarrão e camarão.</li>
+                    <li>Erros constantes de ortografia.</li>
+                    <li>Lentidão na leitura.</li>
+                </ul>
+                <br>
+                <h3>Solução:</h3>
+                <ul class="w3-ul">
+                    <li>Utilizar fontes que facilitam a leitura para pessoas com dislexia, como
+                        Open Dyslexic e Comic Sans.</li>
+                    <li>Maior espaçamento entre letras e parágrafos.</li>
+                    <li>Separação de parágrafos com demarcação de cor de fundo.</li>
+                    <li>Leitor de tela.</li>
+                    <li>Transcrição de voz para texto, para facilitar a escrita.</li>
+                </ul>
+                <br>
+                <h4><b>"Helperbird: Accessibility & Dyslexia Software"</b></h4>
+                <ul class="w3-ul">
+                    <li>Dentre os plugins de acessibilidade pesquisados, Helperbird é um dos mais completo
+                        e acessíveis.</li>
+                    <li>Com mais de 10.000 usuários no Chrome, está disponível também para Firefox e Edge.</li>
+                    <li>Preço da versão Pro: 40 dólares ao ano.</li>
+                </ul>
+                <br>
+                <img src="images/cog01.png" alt="imagem com o logotipo do software Helperbird"
+                class="ajusteSol">
+                <br>
+                <br>
+                <ul class="w3-ul">
+                    <li>A versão Pro possui mais que o dobro de configurações que a versão gratuita,
+                        custando 40 dólares ao ano enquanto algumas extensões concorrentes chegam a mais
+                        de 100 dólares ao ano.</li>
+                    <li>Algumas configurações da versão Pro podem ser obtidas de outra maneira,
+                        como por exemplo, o tamanho da fonte, que pode ser configurado nativamente
+                        pelos navegadores.</li>
+                    <li>As opções de acessibilidade vão além da dislexia, tendo soluções para diversos
+                        tipos de deficiências, como baixa visão, daltonismo e déficit de atenção.</li>
+                </ul>
+                <br>
+                <img src="images/cog02.png" alt="imagem com a interface do software Helperbird"
+                class="ajusteSol">
+                <br>
+                <br>
+                <h5><b>SITE NORMAL</b></h5>
+                <br>
+                <img src="images/cog03.png" alt="imagem de uma página de um site normal"
+                class="ajusteSol">
+                <br>
+                <br>
+                <h5><b>MODO LEITURA COM FONTE "OpenDyslexic"</b></h5>
+                <br>
+                <img src="images/cog04.png" alt="imagem de um site com a fonte OpenDyslexic"
+                class="ajusteSol">
+                <br>
+                <br>
+            </div>
+            <br>
+
+            <!-- Conteúdo TDAH -->
+            <button onclick="acordeom('btnAcordeom02')" class="w3-button w3-indigo w3-hover-black
+            w3-block w3-left-align">TDAH</button>
+            <br>
+            <br>
+            <div id="btnAcordeom02" class="w3-hide w3-container w3-light-grey">
+                <h2>Transtorno do Déficit de Atenção com Hiperatividade (TDAH)</h2>
+                <br>
+                <h2>O que é?</h2>
+                <ul class="w3-ul">
+                    <li>Transtorno neurobiológico, de causas genéticas.</li>
+                    <li>Aparece na infância e frequentemente acompanha o indivíduo por toda a sua vida.</li>
+                    <li>Se caracteriza por sintomas de desatenção, inquietude e impulsividade.</li>
+                    <li>Chamado às vezes de DDA (Distúrbio do Déficit de Atenção).</li>
+                </ul>
+                <br>
+                <h3>Solução:</h3>
+                <ul class="w3-ul">
+                    <li>Modo leitura, removendo distrações da página, como imagens e anúncios.</li>
+                    <li>Readability, Equal Entry, BeeLine Reader, EasyReader, WebHelpDyslexia e Helperbird.</li>
+                </ul>
+                <br>
+                <h4><b>"Easy Reader"</b></h4>
+                <ul class="w3-ul">
+                    <li>É uma extensão para Chrome completamente gratuita.</li>
+                    <li>Com mais de 30.000 usuários.</li>
+                    <li>Cria um pop-up limpo e sem distrações com o texto selecionado pelo usuário.</li>
+                </ul>
+                <br>
+                <img src="images/cog05.png" alt="imagem da Chrome Web Store sobre a extensão Easy Reader"
+                class="ajusteSol">
+                <br>
+                <br>
+                <h5><b>SITE NORMAL</b></h5>
+                <br>
+                <img src="images/cog06.png" alt="imagem de uma página de um site normal"
+                class="ajusteSol">
+                <br>
+                <br>
+                <h5><b>MODO LEITURA COM EXTENSÃO "Easy Reader"</b></h5>
+                <br>
+                <img src="images/cog07.png" alt="imagem de um site com a extensão Easy Reader"
+                class="ajusteSol">
+                <br>
+                <br>
+            </div>
+            <br>
+
+            <!-- Conteúdo Autismo -->
+            <button onclick="acordeom('btnAcordeom03')" class="w3-button w3-indigo w3-hover-black
+            w3-block w3-left-align">Autismo</button>
+            <br>
+            <br>
+            <div id="btnAcordeom03" class="w3-hide w3-container w3-light-grey">
+                <h2>Autismo</h2>
+                <br>
+                <h2>O que é?</h2>
+                <ul class="w3-ul">
+                    <li>O Transtorno do Espectro Autista (TEA) é um transtorno mental que reúne desordens
+                        do desenvolvimento neurológico.</li>
+                    <li>Presentes desde o nascimento ou começo da infância.</li>
+                    <li>Sua causa não é conhecida.</li>
+                    <li>Há uma grande variedade de características.</li>
+                </ul>
+                <br>
+                <h3>Eixos do Transtorno do Espectro Autista</h3>
+                <!-- Tabela espectro Autista -->
+                <div class="w3-row w3-container w3-center">
+                    <div class="w3-col l3 m6 w3-white w3-padding">
+    	                <p>Quociente Intelectual</p>
+                        <p>Interação social</p>
+                        <p><br>Comunicação</p>
+                        <p>Comportamentos repetitivos</p>
+                        <p>Regulação sensorial</p>
+                        <p>Atividade motora</p>
+                    </div>
+                    <div class="w3-col l3 m6 w3-grey w3-padding">
+      	                <p>Déficit <br> severo</p>
+                        <p>Isolado</p>
+                        <p><br>Não verbal</p>
+                        <p><br>Severos</p>
+                        <p><br>Hipossensibilidade</p>
+                        <p>Hipo</p>
+                    </div>
+                    <div class="w3-col l3 m6 w3-dark-grey w3-padding">
+      	                <p><br>Moderado</p>
+                        <p>Passivo</p>
+                        <p><br>Verbal</p>
+                        <p><br>Leves</p>
+                        <p><br>Hipersensibilidade</p>
+                        <p>Hiper</p>
+                    </div>
+                    <div class="w3-col l3 m6 w3-black w3-padding">
+      	                <p>Alto funcionamento</p>
+                        <p>Sociável, mas estranho</p>
+                        <p>-</p>
+                        <p><br>-</p>
+                        <p><br>-</p>
+                        <p>-</p>
+                    </div>
+                </div>
+                <br>
+                <h3>Solução:</h3>
+                <ul class="w3-ul">
+                    <li>Leitores de tela: Screen reader, NVDA e DOSVOX.</li>
+                    <li>Mudança esquema de cores: High Contrast e Dark Background and Light Text.</li>
+                    <li>Comunicação Aumentativa e Alternativa (CAA): AraBoard, Plaphoons e Scala.</li>
+                    <li>Conversor de fala para texto: Dictanote.</li>
+                    <li>Conversor de texto para áudio: SpeakIt e Read Aloud.</li>
+                </ul>
+                <br>
+                <img src="images/cog08.png" alt="imagem da Chrome Web Store sobre a extensão Read Aloud"
+                class="ajusteSol">
+                <br>
+                <br>
+                <img src="images/cog09.png" alt="imagem da Chrome Web Store sobre a extensão Dictanote"
+                class="ajusteSol">
+                <br>
+                <br>
+                <img src="images/cog10.png" alt="imagem da Chrome Web Store sobre a extensão Dark Background"
+                class="ajusteSol">
+                <br>
+                <br>
+            </div>
+            <hr>
+            <h2>Fontes:</h2>
+            <p>https://saude.abril.com.br/medicina/o-que-e-dislexia-causa-sintomas-diagnostico-e-tratamento/</p>
+            <p>https://tdah.org.br/sobre-tdah/o-que-e-tdah/</p>
+            <p>https://autismoerealidade.org.br/o-que-e-o-autismo/</p>
+            <p>http://www.secti.ma.gov.br/files/2015/12/Cartilha-ciencia-e-tecnologia-2.compressed.pdf</p>
+            <p>https://revistainclusiones.cl/ferramentas-gratuitas-de-tecnologia-assistiva-acessibilidade-total/</p>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+<!-- Rodapé -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Siga nosso projeto nas Redes Sociais</h4>
+    <nav>
+      <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Facebook"><i
+          class="fa fa-facebook"></i></a>
+      <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+      <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Instagram"><i
+          class="fa fa-instagram"></i></a>
+      <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Linkedin"><i
+          class="fa fa-linkedin"></i></a>
+    </nav>
+    <p>Desenvolvido por:<a href="equipes.html" target="_blank"> Equipe Rocket</a></p>
+  
+    <div class="w3-tooltip w3-right ajusteRodape">
+      <span class="w3-text w3-padding w3-indigo w3-hide-small">Voltar ao topo</span>
+      <a class="w3-button w3-theme" href="#topo"><span class="w3-xlarge">
+          <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  
+  </body>
+  </html>
