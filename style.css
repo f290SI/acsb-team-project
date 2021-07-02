@@ -1,0 +1,127 @@
+
+
+/* ----- Ajuste Fontes -----*/
+
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ----- Ajustes Acessibilidade -----*/
+
+*:focus{
+    outline: 2px solid red;
+    outline-offset: 1px;
+    
+}
+
+nav a:focus, nav button:focus{
+    background-color: #fff;
+    color: #000;
+}
+
+footer nav a:focus, .rkt-logo-btn:focus{
+    background-color: #ccc !important;
+    color: #000 !important;
+}
+.rkt-black-btn:focus{
+    background-color: black !important;
+}
+
+.rkt-gray-btn:focus{
+    background-color: #ccc !important;
+    color: #000 !important;
+}
+
+.nav-skip{
+    position: relative;
+}
+
+.skip-link{
+    position: absolute;
+    top: -200px;
+}
+
+.skip-link:focus{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ----- Ajuste Menu Lateral -----*/
+
+.menuLateral {
+    display:none;
+    z-index:2;
+}
+
+/* ----- Carrossel de imagens -----*/
+
+.ajusteCarrossel {
+    padding: 0px;
+    width:100%;
+    min-height:350px;
+    max-height:600px;
+}
+
+.imgCarrossel {
+    width:100%;
+    min-height:350px;
+    max-height:600px;
+}
+
+/* ----- Foto FATEC -----*/
+
+.imgFatec {
+    width: 100%;
+}
+
+/* ----- Botão lateral -----*/
+
+.btnContainer {
+    position:relative;
+}
+
+.btnContainerMais {
+    position:absolute;
+    top:-28px;
+    right:24px;
+}
+
+/* ----- Imagens Soluções -----*/
+
+.ajusteSol {
+    width:100%;
+}
+
+/* ----- Projeto -----*/
+
+.iconsProj {
+    font-size:200px;
+}
+
+/* ----- Blog -----*/
+
+.contPag {
+    max-width:1400px;
+}
+
+.ajusteFotoBlog {
+    width:100%;
+}
+
+.ajustePosts {
+    width:50px;
+}
+
+/* ----- Rodapé -----*/
+
+.ajusteRodape {
+    position:relative;
+    bottom:100px;
+    z-index:1;
+}
+
+/* ----- Equipe -----*/
+
+.ajusteEquipe {
+    width:100%;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<title>Acessibilidade - Projeto Final</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+
+<body id="topo">
+
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+        </div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper">
+            </div>
+        </div>
+    </div>
+
+<!-- Menu lateral ao clicar -->
+<!-- Menu lateral ao clicar -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-large menuLateral" id="menuLateral">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright
+  w3-text-indigo">Fechar
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Deficiência Auditiva</a>
+  <a href="#" class="w3-bar-item w3-button">Deficiência Física</a>
+  <a href="#" class="w3-bar-item w3-button">Deficiência Intelectual</a>
+  <a href="#" class="w3-bar-item w3-button">Deficiência Visual</a>
+</nav>
+
+<!-- Menu principal -->
+<nav class="w3-top nav-skip">
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+      href="javascript:void(0);" onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button w3-indigo rkt-logo-btn"><i class="fa fa-universal-access
+        w3-margin-right"></i>PROJETO: "Blog Acessibilidade"</a>
+    <a href="projeto.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projeto</a>
+    <div class="w3-dropdown-hover w3-hide-small" id="rkt-dropdown">
+      <button class="w3-button" title="equipes que integram o projeto">Equipes
+        <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="equipes.html" class="w3-bar-item w3-button">Rocket</a>
+        <a href="equipes.html" class="w3-bar-item w3-button">Equipe 02</a>
+        <a href="equipes.html" class="w3-bar-item w3-button">Equipe 03</a>
+        <a href="equipes.html" class="w3-bar-item w3-button">Equipe 04</a>
+      </div>
+    </div>
+    <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
+    <a href="contato.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contato</a>
+    <a href="#main" class="skip-link" tabindex="1">Saltar para conteudo</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-indigo" title="Procurar">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Menu em telas menores -->
+  <div id="menuMenor" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="projeto.html" class="w3-bar-item w3-button">Projeto</a>
+    <a href="equipes.html" class="w3-bar-item w3-button">Equipes</a>
+    <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+    <a href="contato.html" class="w3-bar-item w3-button">Contato</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</nav>
+
+<br>
+<br>
+<br>
+
+<!-- iframe -->
+<div class="w3-container">
+    <iframe tabindex="-1" width="100%" height="400px" src="https://maps.google.com/maps?width=100%25&amp;
+    height=400&amp;hl=en&amp;q=Rua%20Jarbas%20Leme%20Godoy,%20875%20Araras%20SP+(FATEC)&amp;
+    t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</div>
+<br>
+
+<!-- Contato -->
+<div class="w3-container w3-padding-64 w3-theme-l5">
+    <div class="w3-row">
+      <div class="w3-col m5">
+      <div class="w3-padding-16"><span class="w3-xlarge w3-border-indigo w3-bottombar">NOSSO CONTATO</span></div>
+        <h3>Endereço</h3>
+        <p>Rua Jarbas Leme Godoy, 875 (Jd. José Ometto II)</p>
+        <p><i class="fa fa-map-marker w3-text-indigo w3-xlarge"></i>  Araras, SP</p>
+        <p><i class="fa fa-phone w3-text-indigo w3-xlarge"></i>  (19) 3541-3004</p>
+        <p><i class="fa fa-envelope-o w3-text-indigo w3-xlarge"></i>  contato@fatec.sp.gov.br</p>
+      </div>
+      <div class="w3-col m7">
+        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+        <div class="w3-section">      
+          <label>Nome</label>
+          <input class="w3-input" type="text" name="Nome" required>
+        </div>
+        <div class="w3-section">      
+          <label>Email</label>
+          <input class="w3-input" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">      
+          <label>Mensagem</label>
+          <input class="w3-input" type="text" name="Mensagem" required>
+        </div>  
+        <input class="w3-check" type="checkbox" checked name="Like">
+        <label>Salvar email</label>
+        <button type="submit" class="w3-button w3-right w3-theme rkt-gray-btn">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Foto FATEC -->
+  <img src="images/fatec.png" class="w3-image w3-grayscale-max w3-opacity-max imgFatec">
+  
+  <!-- Rodapé -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Siga nosso projeto nas Redes Sociais</h4>
+  <nav>
+    <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Facebook"><i
+        class="fa fa-facebook"></i></a>
+    <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Instagram"><i
+        class="fa fa-instagram"></i></a>
+    <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Linkedin"><i
+        class="fa fa-linkedin"></i></a>
+  </nav>
+  <p>Desenvolvido por:<a href="equipes.html" target="_blank"> Equipe Rocket</a></p>
+
+  <div class="w3-tooltip w3-right ajusteRodape">
+    <span class="w3-text w3-padding w3-indigo w3-hide-small">Voltar ao topo</span>
+    <a class="w3-button w3-theme" href="#topo"><span class="w3-xlarge">
+        <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+  
+    <script src="script.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+ 
+  </body>
+  </html>
+  

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<title>Acessibilidade - Projeto Final</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+
+<body id="topo" class="w3-light-grey">
+
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+        </div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper">
+            </div>
+        </div>
+    </div>
+
+<!-- Menu lateral ao clicar -->
+<!-- Menu lateral ao clicar -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-large menuLateral" id="menuLateral">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright
+  w3-text-indigo">Fechar
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Deficiência Auditiva</a>
+  <a href="#" class="w3-bar-item w3-button">Deficiência Física</a>
+  <a href="#" class="w3-bar-item w3-button">Deficiência Intelectual</a>
+  <a href="#" class="w3-bar-item w3-button">Deficiência Visual</a>
+</nav>
+
+<!-- Menu principal -->
+<nav class="w3-top nav-skip">
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+      href="javascript:void(0);" onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button w3-indigo rkt-logo-btn"><i class="fa fa-universal-access
+        w3-margin-right"></i>PROJETO: "Blog Acessibilidade"</a>
+    <a href="projeto.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projeto</a>
+    <div class="w3-dropdown-hover w3-hide-small" id="rkt-dropdown">
+      <button class="w3-button" title="equipes que integram o projeto">Equipes
+        <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="equipes.html" class="w3-bar-item w3-button">Rocket</a>
+        <a href="equipes.html" class="w3-bar-item w3-button">Equipe 02</a>
+        <a href="equipes.html" class="w3-bar-item w3-button">Equipe 03</a>
+        <a href="equipes.html" class="w3-bar-item w3-button">Equipe 04</a>
+      </div>
+    </div>
+    <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
+    <a href="contato.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contato</a>
+    <a href="#main" class="skip-link" tabindex="1">Saltar para conteudo</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-indigo" title="Procurar">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Menu em telas menores -->
+  <div id="menuMenor" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="projeto.html" class="w3-bar-item w3-button">Projeto</a>
+    <a href="equipes.html" class="w3-bar-item w3-button">Equipes</a>
+    <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+    <a href="contato.html" class="w3-bar-item w3-button">Contato</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</nav>
+<br>
+<br>
+
+<!-- Contâiner da Página (tamanho fixo central) -->
+<div class="w3-content contPag">
+
+    <!-- Cabeçalho -->
+    <header class="w3-container w3-center w3-padding-32"> 
+      <h1><b>NOSSO BLOG</b></h1>
+      <p>Bem vindo ao nosso blog!</p>
+      <p>Fique por dentro das novidades sobre o nosso projeto.</p>
+      <p><span class="w3-tag w3-indigo">Equipe Rocket</span></p>
+    </header>
+    
+    <!-- Grid -->
+    <div class="w3-row">
+    
+    <!-- Entradas de Blog -->
+    <div class="w3-col l8 s12">
+      <!-- Entrada do Blog -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <img src="images/post01.png" alt="#" class="ajusteFotoBlog">
+        <div class="w3-container">
+          <h3><b>TÍTULO 01</b></h3>
+          <h5>Título descritivo, <span class="w3-opacity">10 de junho de 2021</span></h5>
+        </div>
+    
+        <div class="w3-container">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc
+             id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at.
+             Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+             tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+             congue gravida diam non fringilla.
+            </p>
+            <div class="w3-row">
+                <div class="w3-col m8 s12">
+                    <p><button class="w3-button w3-padding-large w3-indigo w3-hover-black rkt-black-btn">
+                    <b>LEIA MAIS »</b></button></p>
+                </div>
+            <div class="w3-col m4 w3-hide-small">
+                <p><span class="w3-padding-large w3-right"><b>Comentários  </b>
+                <span class="w3-tag">4</span></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    
+      <!-- Entrada do Blog -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <img src="images/post02.png" alt="#" class="ajusteFotoBlog">
+        <div class="w3-container">
+            <h3><b>TÍTULO 02</b></h3>
+            <h5>Título descritivo, <span class="w3-opacity">26 de maio de 2021</span></h5>
+        </div>
+    
+        <div class="w3-container">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl.
+            Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim,
+            ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper.
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla.
+            </p>
+            <div class="w3-row">
+                <div class="w3-col m8 s12">
+                    <p><button class="w3-button w3-padding-large w3-indigo w3-hover-black rkt-black-btn"><b>LEIA MAIS »</b>
+                    </button></p>
+                </div>
+                <div class="w3-col m4 w3-hide-small">
+                    <p><span class="w3-padding-large w3-right"><b>Comentários  </b> 
+                    <span class="w3-tag">2</span></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- Fim das entradas do Blog -->
+    </div>
+    
+    <!-- Menu de introdução -->
+    <div class="w3-col l4">
+      <!-- Sobre a equipe (Card) -->
+        <div class="w3-card w3-margin w3-margin-top w3-indigo">
+            <img src="images/logoBlog.png" class="ajusteFotoBlog">
+            <div class="w3-container w3-white">
+                <h4><b>Nossa equipe</b></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+        <hr>
+      
+      <!-- Postagens -->
+      <div class="w3-card w3-margin">
+        <div class="w3-container w3-padding w3-indigo">
+          <h4>Postagens recentes</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="images/thumb.png" alt="#" class="w3-left w3-margin-right ajustePosts">
+            <span class="w3-large">Post 01</span><br>
+            <span>Descritivo da postagem</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="images/thumb.png" alt="Image" class="w3-left w3-margin-right ajustePosts">
+            <span class="w3-large">Post 02</span><br>
+            <span>Descritivo da postagem</span>
+          </li> 
+          <li class="w3-padding-16">
+            <img src="images/thumb.png" alt="Image" class="w3-left w3-margin-right ajustePosts">
+            <span class="w3-large">Post 03</span><br>
+            <span>Descritivo da postagem</span>
+          </li>   
+          <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+            <img src="images/thumb.png" alt="Image" class="w3-left w3-margin-right ajustePosts">
+            <span class="w3-large">Post 04</span><br>
+            <span>Descritivo da postagem</span>
+          </li>  
+        </ul>
+      </div>
+      <hr> 
+     
+      <!-- Etiquetas -->
+      <div class="w3-card w3-margin">
+        <div class="w3-container w3-padding w3-indigo">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+            <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Acessibilidade</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Dautonismo</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baixa visão</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Protanotopia</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deuteranopia</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Tritanopia</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Dislexia</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Autismo</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Desenvolvedores</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Designers</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Arquitetos</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Testadores</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Paralisia</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Surdez</span>
+            </p>
+        </div>
+      </div>
+      
+    <!-- Final das entradas de Menu -->
+    </div>
+    
+    <!-- Fim do Grid -->
+    </div>
+    <br>
+    
+    <!-- Fim do contâiner da Página -->
+    </div>
+
+    <!-- Botões Páginas Blog -->
+    <div class="w3-container w3-indigo w3-padding-32 w3-margin-top w3-center">
+        <button class="w3-button w3-black w3-padding-large w3-margin-bottom rkt-gray-btn">&laquo Anterior</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="w3-button w3-black w3-padding-large w3-margin-bottom rkt-gray-btn">Próxima &raquo</button>
+    </div>
+    
+
+<!-- Rodapé -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Siga nosso projeto nas Redes Sociais</h4>
+  <nav>
+    <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Facebook"><i
+        class="fa fa-facebook"></i></a>
+    <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Instagram"><i
+        class="fa fa-instagram"></i></a>
+    <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Linkedin"><i
+        class="fa fa-linkedin"></i></a>
+  </nav>
+  <p>Desenvolvido por:<a href="equipes.html" target="_blank"> Equipe Rocket</a></p>
+
+  <div class="w3-tooltip w3-right ajusteRodape">
+    <span class="w3-text w3-padding w3-indigo w3-hide-small">Voltar ao topo</span>
+    <a class="w3-button w3-theme" href="#topo"><span class="w3-xlarge">
+        <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+  
+  <script src="script.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  
+  </body>
+  </html>
